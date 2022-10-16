@@ -34,7 +34,7 @@ btn_sobre_mim.addEventListener('click', function() {
 let btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
-if (event.type === 'toutchstart') event.preventDefault();
+if (event.type === 'touchstart') event.preventDefault();
 let nav = document.getElementById('navegation');
 let body = document.getElementById('body');
 nav.classList.toggle('active');
