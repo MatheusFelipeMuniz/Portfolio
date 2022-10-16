@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap'); /* é assim que se importa uma fonte do google fonts*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 100px;
+    z-index: 1000;
+}
+header .logo {
+    width: 120px;
+}
+header .logo:hover {
+    opacity: .8;
+}
+#navegation ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#navegation ul li a {
+    padding: 4px 14px; 
+    font-weight: bold;
+    color: white;
+    transition: all .3s;
+    border-radius: 40px;
+}
+#navegation ul li a:hover {
+    background: white;
+    color: rgb(60, 36, 100);
+}
+#btn-mobile {
+    display: none;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+section::before { /*  Para fazer o degrade da imagem de fundo com a cor do background */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#moon {
+    mix-blend-mode: screen;
+}
+#mountains_front { 
+    z-index: 10;
+}
+#text {
+    top: 550px;
+    right: -365px;
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    cursor: default;
+}
+#btn {
+    height: 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 28px 30px;
+    background: white;
+    color: #2b1055;
+    font-size: 1.8rem;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+}
+#btn:hover {
+    border-radius: 50px;
+    padding: 35px 45px;
+    background: #2b1055;
+    color: white;
+}
+.sec {
+    position: relative;
+    padding: 100px;
+    background-color: #1c0522;
+}
+.sec h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+/* galeria */
+
+.container-galeria {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; /* para organizar em colunas e linhas */
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.item-galeria {
+    width: 550px;
+    transition: all .3s ease-in-out;
+    opacity: .6;
+}
+.item-galeria:hover {
+    scale: 1.2;
+    z-index: 1000;
+    opacity: 1;
+}
+.item-galeria img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+/* caixa texto */
+
+.caixa-texto {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.expand-btn {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background: #7597de;
+    display: flex;
+    height: 50px;
+    transition: all .3s;
+}
+.expand-btn:hover {
+    background: #2b1055;
+}
+
+.expand-btn i {
+    font-size: 35px ;
+    margin-right: 12px;
+    transform: rotate();
+    transition: all .3s;
+}
+.sobre-mim {
+    overflow: hidden;
+    text-align: justify;
+    position: relative;
+    padding: 20px;
+    font-size: 1em;
+    color: #1c0522;
+    margin-top: 10px;
+    background: white;
+    border-radius: 10px;
+    display: none;
+}
+
+/*  rodapé   */
+footer {
+    margin-top: -1px;
+    padding: 25px;
+    background: linear-gradient(to bottom, #1c0522, #2b1055);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .9em;
+}
+.footer-bottom {
+    margin-top: 30px;
+    font-size: .8em;
+}
+.socials {
+    padding: 5px;
+    display: flex;
+    gap: 15px;
+}
+.socials li:hover {
+    opacity: .6;
+}
+.rede img {
+    width: 20px;
+}
+
+
+/*  MEDIA QUERIES    */
+
+@media (max-width: 600px) {
+/* DEFAULT */
+body.active {
+overflow-x: hidden;
+overflow-y: hidden;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    z-index: 1000;
+}
+#navegation {
+    margin: 0;
+}
+#navegation ul {
+    display: flex;
+    border-radius: 40px;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    margin-top: 40px;
+    flex-direction: column;
+    right: 0px;
+    background: #1c0522;
+    z-index: 1000;
+    transition: .7s;
+    visibility: hidden;
+    overflow: hidden;
+}
+#navegation.active ul{
+    padding: 30px;
+    height: calc(100vh - 40px);
+    border-radius: 40px;
+    visibility:visible
+}
+#navegation ul li {
+    margin: 10px;
+    background-color: white;
+    padding: 19px 0px;
+    border-radius: 30px;
+    box-shadow: rgb(196, 196, 196);
+}
+#navegation #home {
+    padding: 20px 130px;
+}
+#navegation #contato {
+    padding: 20px 120px;
+}
+#navegation #curriculo {
+    padding: 20px 115px;
+}
+#navegation ul li a {
+    border-radius: 40px;
+    font-weight: bold;
+    color: #2b1055;
+    transition: all .3s;
+    margin: 10px;
+    background: white;
+}
+#navegation ul li a:hover {
+    color: white;
+    background: #2b1055;
+}
+header .logo {
+    width: 150px;
+}
+#btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+}
+#burger {
+    color: white;
+    display: block;
+    width: 40px;
+    border-top: 6px solid;
+    
+}
+#burger::after, #burger::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: all .3s;
+    position: relative;
+}
+#navegation.active #burger {
+    border-top-color: transparent;
+}
+#navegation.active #burger::before {
+    transform: rotate(135deg);
+}
+#navegation.active #burger::after {
+    transform: rotate(-135deg);
+    top: -11px;
+}
+/*  HOME  */
+#btn {
+    height: 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 48px 50px;
+    background: white;
+    color: #2b1055;
+    font-size: 2rem;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+}
+#btn:hover {
+    border-radius: 60px;
+    padding: 58px 60px;
+    background: #2b1055;
+    color: white;
+}
+#text {
+    top: 630px;
+    right: -605px;
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 20vw;
+    z-index: 9;
+    cursor: default;
+}
+.sec {
+    position: relative;
+    padding: 20px;
+    background-color: #1c0522;
+}
+.sec h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: white;
+}
+/* caixa texto */
+
+.caixa-texto {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.expand-btn {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.7em;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background: #7597de;
+    display: flex;
+    height: 80px;
+    transition: all .3s;
+}
+.expand-btn:hover {
+    background: #2b1055;
+}
+.expand-btn i {
+    font-size: 50px ;
+    margin-right: 12px;
+    transform: rotate();
+    transition: all .3s;
+}
+.sobre-mim {
+    text-align: justify;
+    position: relative;
+    padding: 20px;
+    font-size: 1em;
+    color: #1c0522;
+    margin-top: 10px;
+    background: white;
+    border-radius: 20px;
+    display: none;
+}
+/* galeria */
+.item-galeria:hover {
+    scale: 1;
+    z-index: 1000;
+    opacity: 1;
+}
+/*  rodapé   */
+footer {
+    margin-top: 0;
+}
+.footer-content {
+    font-size: 1em;
+}
+.rede img {
+    width: 40px;
+}
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <style>
+        #navegation #home {
+            background: white;
+            color: #2b1055;
+        }
+        @media (max-width: 600px) {
+        #navegation #home {
+        background: #2b1055;
+        color: white;
+        }
+        }
+    </style>
+</head>
+<body id="body">
+    <header>
+        <a href="index.html"><img src="./img/Logo.png" alt="logo" class="logo"></a>
+        <nav id="navegation">
+            <!-- Menu Responsivo -->
+            <button id="btn-mobile" aria-expanded="false">
+                <span id="burger"></span>
+            </button>
+            <!-- Menu Responsivo -->
+            <ul>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="#" id="curriculo">Currículo</a></li>
+                <li><a href="contato.html" id="contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="./img/stars.png" id="stars">
+        <img src="./img/moon.png" id="moon">
+        <img src="./img/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Bem Vindo!</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="./img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <!-- Dropdown -->
+
+        <div class="caixa-texto">
+            <div class="expand-btn">
+                <span class="btn-text">Sobre Mim</span>
+                <i class="bx bx-chevron-down" id="arrow"></i>
+            </div>
+            <p class="sobre-mim">Oi! me chamo Matheus, sou universitário cursando Tecnologia da Informação no Instituto Metrópole Digital - UFRN. Filho de pai programador, cresci apaixonado por tecnologia e inovação, antes de mergulhar de cabeça no mundo do desenvolvimento web passei anos e anos estudando design, o que fez me identificar com o web, tais conhecimentos e experiências contribuem grandemente no meu crescimento profissional na área. Meu maior prazer é aprender e aplicar conhecimento. Hoje com 19 anos, desenvolvo minhas primeiras aplicações, traço minhas metas, compartilhando e construindo conhecimento.</p>
+        </div>
+        
+        <!-- Portfólio -->
+        <h2>Meus projetos</h2>
+        <div class="container-galeria">
+            <a href="#" target="_blank" class="item-galeria"><img src="./img/projeto4.jpg" alt="projeto1"></a>
+            <a href="#" target="_blank" class="item-galeria"><img src="./img/projeto5.jpg" alt="projeto2"></a>
+            <a href="https://matheusfelipemuniz.github.io/Landing-Page-Coca-Cola-para-amigo/" target="_blank" class="item-galeria"><img src="./img/projeto3.jpg" alt="projeto3"></a>
+            <a href="#" target="_blank" class="item-galeria"><img src="./img/projeto1.jpg" alt="projeto4"></a>
+            <a href="#" target="_blank" class="item-galeria"><img src="./img/projeto2.jpg" alt="projeto5"></a>
+            <a href="#" target="_blank" class="item-galeria"><img src="./img/projeto6.jpg" alt="projeto6"></a>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>Portfólio Matheus Muniz</h3>
+            <ul class="socials">
+                <li><a href="https://www.linkedin.com/in/matheus-felipe-melo-costa-muniz-066474240/" target="_blank" class="rede"><img src="./img/linkedin.png" alt=""></a></li>
+                <li><a href="https://github.com/MatheusFelipeMuniz" target="_blank" class="rede"><img src="./img/github.png" alt=""></a></li>
+            </ul>  
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright ©2022 Matheus Muniz</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
