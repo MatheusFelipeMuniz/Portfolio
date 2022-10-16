@@ -354,7 +354,7 @@ header .logo {
     color: white;
 }
 #text {
-    top: 630px;
+    top: 530px;
     right: -605px;
     position: absolute;
     color: white;
@@ -413,10 +413,11 @@ header .logo {
     display: none;
 }
 /* galeria */
+.item-galeria {
+    opacity: 1;
+}
 .item-galeria:hover {
     scale: 1;
-    z-index: 1000;
-    opacity: 1;
 }
 /*  rodapé   */
 footer {
