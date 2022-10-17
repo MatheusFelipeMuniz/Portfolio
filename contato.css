@@ -277,7 +277,7 @@ header {
     background: #2b1055;
 }
 header .logo {
-    width: 150px;
+    width: 120px;
 }
 #btn-mobile {
     display: flex;
@@ -337,24 +337,30 @@ section {
     overflow: hidden;
 }
 section .main {
+    padding: 10px 20px;
     width: 100%;
-    height: 700px;
+    height: 100%;
     background: linear-gradient(#7597de, #2b1055) ;
-    border-radius: 20px;
+    border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column
 }
 section .text {
-    font-size: 45px;
-    color: white;
-    margin-bottom: 30px;
-}
-section p {
     font-size: 20px;
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+}
+section p {
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+#sorriso {
+    font-size: 30px ;
+    margin-bottom: 40px;
 }
 section .btn {
     padding: 15px 55px;
@@ -362,6 +368,7 @@ section .btn {
     font-size: 1.6rem;
     transition: .3s;
     border-radius: 40px;
+    margin-bottom: 20px;
 }
 section .btn:hover {
     padding: 20px 60px;
@@ -372,8 +379,8 @@ section .btn:hover {
     border-radius: 40px;
 }
 section img {
-    max-width: 150px;
-    margin-bottom: 30px;
+    margin: 40px 0px;
+    width: 100px;
 }
 /* contato */
 section .formulario {
@@ -385,7 +392,7 @@ section .formulario {
     background: linear-gradient(#7597de, #2b1055) ;
     width: 500px;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 section h2 {
     margin: 10px;
@@ -415,7 +422,7 @@ form input:focus {
     border-radius: 15px;
 }
 form textarea {
-    height: 150px;
+    height: 170px;
     padding: 20px;
     outline: none;
     border: 0;

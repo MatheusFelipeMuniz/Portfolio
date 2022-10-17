@@ -295,7 +295,7 @@ header {
     background: #2b1055;
 }
 header .logo {
-    width: 150px;
+    width: 120px;
 }
 #btn-mobile {
     display: flex;
@@ -354,7 +354,7 @@ header .logo {
     color: white;
 }
 #text {
-    top: 500px;
+    top: 450px;
     right: -870px;
     position: absolute;
     color: white;
