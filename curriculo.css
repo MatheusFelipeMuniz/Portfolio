@@ -14,6 +14,7 @@ body {
     background: linear-gradient(#2b1055, #1c0522);
 }
 header {
+    margin-bottom: 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -50,7 +51,6 @@ header .logo:hover {
     display: none;
 }
 section {
-    margin-bottom: 100px;
     margin-top: 100px;
     position: relative;
     width: 100%;
@@ -61,116 +61,82 @@ section {
     justify-content: center;
     overflow: hidden;
 }
-section .main {
-    width: 100%;
-    height: 700px;
-    background: linear-gradient(#7597de, #2b1055) ;
+
+/* curriculo */
+.curriculo {
+    padding: 100px;
     border-radius: 20px;
+    height: 100%px;
+    width: 100%;
+    background: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column
 }
-section .text {
-    font-size: 45px;
-    color: white;
-    margin-bottom: 30px;
+.eu {
+    margin-bottom: -50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
-section p {
-    font-size: 20px;
-    color: white;
+.eu img {
+    width: 450px;
+    height: 100%;
+}
+.eu h1 {
+    padding: 0;
+    font-size: 5rem;
+}
+.eu h2 {
+    color: #2b1055;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.eu p {
+    color: rgb(94, 94, 94);
+    font-size: 2.5rem;
+}
+
+
+
+#birds1 {
+    top: 330px;
+    width: 150px;
+    position: absolute;
+}
+#landscape {
+    width: 100%;
+    position: relative;
     margin-bottom: 50px;
 }
-section .btn {
-    padding: 15px 55px;
-    background: white;
-    font-size: 1.6rem;
-    transition: .3s;
-    border-radius: 40px;
-}
-section .btn:hover {
-    padding: 20px 60px;
-    color: white;
-    background: #2b1055;
-    font-size: 1.6rem;
-    transition: .3s;
-    border-radius: 40px;
-}
-section img {
-    max-width: 150px;
-    margin-bottom: 30px;
-}
-section .formulario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px 40px;
-    background: linear-gradient(#7597de, #2b1055) ;
-    width: 600px;
-    border-radius: 40px;
-}
-section h2 {
-    color: white;
+
+
+
+.info .topico {
     font-size: 2.5rem;
-    margin: 2rem;
-}
-section form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-form label {
-    color: white;
-    font-size: 17px;
-    margin-bottom: 4px;
-}
-form input {
-    padding: 15px;
-    outline: none;
-    border: 0;
-    margin-bottom: 20px;
-    font-size: 15px;
-    transition: 0.3s;
-    border-radius: 30px;
-}
-form input:focus {
-    border-radius: 15px;
-}
-form textarea {
-    padding: 20px;
-    outline: none;
-    height: 200px;
-    border: 0;
-    font-size: 15px;
-    border-radius: 30px;
-    margin-bottom: 30px;
-    transition: .3s;
-}
-form textarea:focus {
-    border-radius: 15px;
-}
-form button {
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 1.6rem;
-    background: white;
+    margin: 20px 0px;
     color: #2b1055;
-    border-radius: 40px;
-    margin-bottom: 20px;
-    transition: .3s;
 }
-form button:hover {
-    border-radius: 50px;
-    padding: 20px;
-    background: #2b1055;
-    color: white;
+.info p {
+    text-align: justify;
+    font-size: 2rem;
 }
+.experiencias h1{
+    font-size: 2rem;
+    color: #7597de;
+}
+.experiencias p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+
+
 
 /*  rodapé   */
 footer {
-    margin-top: 0px;
+    margin-top: 100px;
     padding: 35px;
     background: linear-gradient( transparent, #2b1055);
     color: white;
