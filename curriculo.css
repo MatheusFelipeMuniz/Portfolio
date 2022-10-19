@@ -83,10 +83,20 @@ section {
 .eu img {
     width: 450px;
     height: 100%;
+    transition: .3s;
+}
+.eu img:hover {
+    filter: contrast(1.2);
 }
 .eu h1 {
     padding: 0;
     font-size: 5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .3s;
+}
+.eu h1:hover {
+    color: #7597de;
 }
 .eu h2 {
     color: #2b1055;
@@ -100,7 +110,7 @@ section {
 
 
 
-#birds1 {
+#birds {
     top: 330px;
     width: 150px;
     position: absolute;
@@ -127,14 +137,21 @@ section {
     color: #7597de;
 }
 .experiencias p {
+    text-align: justify;
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
-
-
-
-
+.cursos h1 {
+    font-size: 2rem;
+    color: #7597de;
+}
+.cursos h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #2b1055;
+}
 /*  rodapé   */
+
 footer {
     margin-top: 100px;
     padding: 35px;
@@ -166,9 +183,31 @@ footer {
 .rede img {
     width: 20px;
 }
+/* animação */
 
+.typing-animation {
+    animation: typing 3s 0s ease;
+}
+.landscape-animation {
+    animation: subir 3s 0s ease;
+}
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
 
-
+@keyframes subir {
+    from {
+        margin-top: 300px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
 
 
 
