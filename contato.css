@@ -8,6 +8,28 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+#botaorolagem {
+    top: 92%;
+    right: 40px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #2b1055;
+    background: white;
+    position: absolute;
+    z-index: 1200;
+    position: fixed;
+    transition: .3s ease-in-out;
+}
+#botaorolagem:hover {
+    border-radius: 14px;
+    color: white;
+    background: #7597de;
+}
 body {
     min-height: 100vh;
     overflow-x: hidden;
@@ -224,6 +246,24 @@ footer {
 
 @media (max-width: 760px) {
 /* DEFAULT */
+#botaorolagem {
+    top: 91%;
+    right: 20px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #2b1055;
+    background: white;
+    position: absolute;
+    z-index: 1200;
+    position: fixed;
+    transition: .3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 body {
     align-items: center;
     justify-content: c;
