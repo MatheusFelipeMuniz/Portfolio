@@ -51,7 +51,7 @@ header .logo:hover {
     display: none;
 }
 section {
-    margin-top: 100px;
+    margin-top: 60px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -66,7 +66,7 @@ section {
 .curriculo {
     padding: 100px;
     border-radius: 20px;
-    height: 100%px;
+    height: 100%;
     width: 100%;
     background: white;
     display: flex;
@@ -76,22 +76,21 @@ section {
 }
 .eu {
     margin-bottom: -50px;
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 .eu img {
     width: 450px;
     height: 100%;
+    user-select: none;
     transition: .3s;
 }
 .eu img:hover {
     filter: contrast(1.2);
 }
-.eu h1 {
+.eu #nome {
     padding: 0;
     font-size: 5rem;
-    white-space: nowrap;
     overflow: hidden;
     transition: .3s;
 }
@@ -114,11 +113,15 @@ section {
     top: 330px;
     width: 150px;
     position: absolute;
+    pointer-events: none;
+    user-select: none;
 }
 #landscape {
     width: 100%;
     position: relative;
     margin-bottom: 50px;
+    pointer-events: none;
+    user-select: none;
 }
 
 
@@ -189,14 +192,14 @@ footer {
     animation: typing 3s 0s ease;
 }
 .landscape-animation {
-    animation: subir 3s 0s ease;
+    animation: subir 2s 0s ease;
 }
 @keyframes typing {
     from {
-        width: 0%;
+        height: 0px;
     }
     to {
-        width: 100%;
+        height: 120px;
     }
 }
 
@@ -326,6 +329,142 @@ header .logo {
     transform: rotate(-135deg);
     top: -11px;
 }
+
+
+/* curriculo */
+.curriculo {
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.eu {
+    margin-bottom:-20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eu #titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eu img {
+    margin-top: 0px;
+    margin-right: 170px;
+    width: 340px;
+    height: 100%;
+    user-select: none;
+    transition: .3s;
+}
+.eu img:hover {
+    filter: contrast(1.2);
+}
+.eu #nome {
+    padding: 0;
+    font-size: 1.6rem;
+    overflow: hidden;
+    transition: .3s;
+}
+.eu h1:hover {
+    color: #7597de;
+}
+.eu h2 {
+    color: #2b1055;
+    font-size: 1.3rem;
+    margin-bottom: 2px;
+}
+.eu p {
+    color: rgb(94, 94, 94);
+    font-size: 1rem;
+    letter-spacing: .3rem;
+}
+
+
+
+#birds {
+    left: 240px;
+    top: 140px;
+    width: 80px;
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+}
+#landscape {
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    pointer-events: none;
+    user-select: none;
+}
+
+
+
+.info .topico {
+    font-size: 2rem;
+    margin: 10px 0px;
+    color: #2b1055;
+}
+.info p {
+    color: #1c0522;
+    text-align: justify;
+    font-size: 1rem;
+}
+.experiencias h1{
+    font-size: 1.2rem;
+    color: #7597de;
+}
+.experiencias p {
+    text-align: justify;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+.cursos h1 {
+    font-size: 1rem;
+    color: #7597de;
+}
+.cursos h3 {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #2b1055;
+}
+
+
+/* animação */
+
+.typing-animation {
+    animation: typing 1s 0s ease;
+}
+.landscape-animation {
+    animation: subir 2s 0s ease;
+}
+@keyframes typing {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 40px;
+    }
+}
+
+@keyframes subir {
+    from {
+        margin-top: 300px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+
+
     /*  rodapé   */
 footer {
     margin-top: 0;
