@@ -63,6 +63,9 @@ section {
 }
 
 /* curriculo */
+#backgroundmobile {
+    display: none;
+}
 .curriculo {
     padding: 100px;
     border-radius: 20px;
@@ -330,6 +333,12 @@ header .logo {
     top: -11px;
 }
 
+section {
+    background-image: url('./img/curriculomobile.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 84%;
+}
 
 /* curriculo */
 .curriculo {
@@ -435,7 +444,14 @@ header .logo {
     margin-bottom: 30px;
     color: #2b1055;
 }
-
+/* #backgroundmobile {
+    top: 560px;
+    position: absolute;
+    display: initial;
+    width: 100%;
+    z-index: -1000;
+    overflow: hidden;
+} */
 
 /* animação */
 
