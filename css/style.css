@@ -142,7 +142,7 @@ section img {
     background-color: #1c0522;
 }
 .sec h2 {
-    font-size: 3.5em;
+    font-size: 3em;
     margin-bottom: 10px;
     color: white;
 }
@@ -170,11 +170,29 @@ section img {
     width: 100%;
     height: 100%;
 }
+.behance {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: space-between;
+    color: #2b1055;
+    background: white;
+    display: flex;
+    height: 80px;
+    transition: all .3s;
+}
+.behance:hover {
+    background: #2b1055;
+    color: white;
+    border-radius: 20px;
+}
 /* caixa texto */
 
 .caixa-texto {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .expand-btn {
     cursor: pointer;
